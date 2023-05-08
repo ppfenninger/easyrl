@@ -143,7 +143,7 @@ class VecEnv(ABC):
         self.close_extras()
         self.closed = True
 
-    def step(self, actions):
+    def step(self, actions, is_exploratory=False):
         """
         Step the environments synchronously.
 
